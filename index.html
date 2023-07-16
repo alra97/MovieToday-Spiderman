@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width-device-width, intial-scale-1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <title>Spiderman Movie Review</title>
+
+    <style type="text/css">
+
+        body {
+            background-image: url('background3.gif');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+     
+        .tColor {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 35px;
+            width: 500px;
+            color: white;
+            margin: 10px;
+            border: 10px double brown;
+            text-shadow: 2px 2px blue;
+            text-align:center;
+        }
+
+        .details {
+            background-color: #223053;
+            color: white;
+            font-size: 15px;
+            width: 500px;
+            margin: 10px;
+        }
+
+        .hdetails {
+            background-color: #B49B80;
+            color: black;
+            font-size: 15px;
+            width: 500px;
+            margin: 10px;
+            font-size: 30px;
+        }
+        </style>
+        <script type="text/javascript">
+                function message()
+                {
+                    var fname=document.getElementById("fname").value;
+                    alert("Thank you "+fname+" for submitting this form!");
+                }
+        </script>
+    </head>
+    <body>
+ 
+        <div class="container">
+            <div class="row">&nbsp;</div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="tColor">MovieToday "Spider-Man:<br />Across the Spider-Verse"</div>
+                </div>
+            </div>
+            <!--Google Translate-->
+            <div class="row">
+                <div class="col-sm-2">&nbsp;</div>
+                <div class="col-sm-1">
+                    <div id="google_translate_element"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3"></div>
+            </div>
+            <form action="" method="get">
+
+                <div class="details">
+
+                    <div class="row">&nbsp;</div>
+
+                    <div class="row">
+                        <div class="col-sm-2">&nbsp;</div>
+                        <div class="col-sm-4"><label for="fname"> Name </label></div>
+                        <div class="col-sm-4"><input type="text" id="fname" placeholder="Enter your First Name" required></div>
+                        <div class="col-sm-2">&nbsp;</div>
+                    </div>
+
+                    <div class="row">&nbsp;</div>
+
+                    <div class="row">
+                        <div class="col-sm-2">&nbsp;</div>
+                        <div class="col-sm-4"><label for="lname"> Surname </label></div>
+                        <div class="col-sm-4"><input type="text" id="lname" placeholder="Enter your Last Name" required></div>
+                        <div class="col-sm-2">&nbsp;</div>
+                    </div>
+
+                    <div class="row">&nbsp;</div>
+
+                    <div class="row">
+                        <div class="col-sm-2">&nbsp;</div>
+                        <div class="col-sm-4"><label for="pno"> Phone Number </label></div>
+                        <div class="col-sm-4"><input type="text" id="pno" placeholder="Preferably Whatsapp" required></div>
+                        <div class="col-sm-2">&nbsp;</div>
+                    </div>
+
+                    <div class="row">&nbsp;</div>
+
+                    <div class="row">
+                        <div class="col-sm-1">&nbsp;</div>
+                        <div class="col-sm-1"><label for="age">Age:</label></div>
+                        <div class="col-sm-2">
+                            <select name="agegrp" id="age" required>
+                                <option value="Child">5-12</option>
+                                <option value="Adolescent">13-18</option>
+                                <option value="Young Adult">19-21</option>
+                                <option value="Early Adulthood">22-34</option>
+                                <option value="Early Middle Age">35-44</option>
+                                <option value="Late Middle Age">45-64</option>
+                                <option value="Late Adulthood">Above 65</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-2">&nbsp;</div>
+                        <div class="col-sm-2"><label for="gen">Gender:  </label></div>
+                        <div class="col-sm-2"><input type="radio" name="gender" id="gen" value="Fem" required>Female</div>
+                        <div class="col-sm-2"><input type="radio" name="gender" id="gen" value="Masc" required>Male</div>
+                    </div>
+
+                    <br><h2 style="text-align: center; text-shadow: 2px 2px red;"><b><em>Movie Review</em></b></h2>
+
+                    <div class="row">
+                        <div class="col-sm-2">&nbsp;</div>
+                        <div class="col-sm-4"><label for="rate">Rating</label></div>
+                        <div class="col-sm-2">
+                            <select name="rating" id="rate" required>
+                                <option value="5">Excellent</option>
+                                <option value="4">Very Good</option>
+                                <option value="3">Good</option>
+                                <option value="2">Average</option>
+                                <option value="1">Below Average</option>
+                                <option value="0">Won't reccommend</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">&nbsp;</div>
+
+                    <div class="row">
+                        <div class="col-sm-2">&nbsp;</div>
+                        <div class="col-sm-4"><label for="comments">Enter your review:</label></div>
+                        <div class="col-sm-4"><textarea rows="1" cols="20" id="comments">Start Typing...</textarea></div>
+                        <div class="col-sm-2">&nbsp;</div>
+                    </div>
+
+                    <div class="row">&nbsp;</div>
+
+                    <div class="row">
+                        <div class="col-sm-5">&nbsp;</div>
+                        <div class="col-sm-1"> <input type="submit" value="Submit" for="Submit"></div>
+                    </div>
+
+                    <div class="row">&nbsp;</div>
+                </div>
+            </form>
+        </div>
+<!--Google Translate-->
+        <script type="text/javascript">
+            function googleTranslateElementInit()
+            {
+                new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+            }
+        </script>
+
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    </body>
+</html>
